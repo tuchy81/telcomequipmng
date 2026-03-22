@@ -35,6 +35,9 @@ dependencies {
     // BCrypt for admin password
     implementation("org.springframework.security:spring-security-crypto")
 
+    // Swagger / OpenAPI
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.4")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
