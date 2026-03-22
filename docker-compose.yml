@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      DB_PATH: /app/data/telcom.db
+      UPLOAD_DIR: /app/uploads
+    volumes:
+      - db-data:/app/data
+      - upload-data:/app/uploads
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4000:80"
+    depends_on:
+      - backend
+
+volumes:
+  db-data:
+  upload-data:

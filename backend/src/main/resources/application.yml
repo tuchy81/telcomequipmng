@@ -1,0 +1,21 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: jdbc:sqlite:${DB_PATH:./data/telcom.db}
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+file:
+  upload-dir: ${UPLOAD_DIR:./uploads}
+
+server:
+  port: 8080

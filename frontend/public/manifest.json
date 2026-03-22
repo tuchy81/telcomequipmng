@@ -1,0 +1,16 @@
+{
+  "name": "네트워크 장비 실사점검 시스템",
+  "short_name": "실사점검",
+  "description": "네트워크 전산장비 실사점검 관리 시스템",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a56db",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
